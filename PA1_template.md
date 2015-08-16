@@ -46,6 +46,7 @@ hist(ByDaySum,15, main = "Steps per day", xlab = "Steps")
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
+
 Calculate and report the mean and median of the total number of steps taken per day
 
 ```r
@@ -74,6 +75,7 @@ plot(y = ByIntervalMean, x = names(ByIntervalMean), type = "l", main = "Average 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
+
 The interval and then the actual value are shown in the code below.
 
 ```r
@@ -88,6 +90,7 @@ ByIntervalMean[which.max(ByIntervalMean)]
 #4 Imputing missing values
 
 Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)
+
 While only the steps column has NAs it makes sense to check all columns given the requirement, hence the complete cases.
 
 
@@ -134,7 +137,9 @@ hist(ByDaySumReplace,20, main = "Steps per day", xlab = "Steps")
 
 ![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
 
-Take the difference of the means an medians. The mean is slightly changed while the median shows no change.
+Take the difference of the means and medians. 
+
+The mean is slightly changed while the median shows no change.
 
 
 ```r
